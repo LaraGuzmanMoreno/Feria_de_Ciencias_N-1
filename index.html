@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✦ PoP Market ✦</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo"><span class="star" aria-hidden="true">✦</span> PoP Market</a>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#categorias">Colecciones</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#novedades">Novedades</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-cart" id="cart-toggle" aria-label="Abrir carrito">
+    🛒 Mi carrito
+    <span class="cart-count" id="cart-count" aria-live="polite"></span>
+  </button>
+</nav>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true"  id="inicio">
+  <div class="marquee-inner">
+    <span>✦ Envíos a todo el país</span><span class="dot">✿</span>
+    <span>Colección 2025 disponible</span><span class="dot">✿</span>
+    <span>Productos oficiales Sanrio</span><span class="dot">✿</span>
+    <span>Regalo gratis en compras +$30.000</span><span class="dot">✿</span>
+    <span>✦ Envíos a todo el país</span><span class="dot">✿</span>
+    <span>Colección 2025 disponible</span><span class="dot">✿</span>
+    <span>Productos oficiales Sanrio</span><span class="dot">✿</span>
+    <span>Regalo gratis en compras +$30.000</span><span class="dot">✿</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Banner principal">
+  <div class="container" aria-hidden="true"></div>
+  <div class="sticker" aria-hidden="true">🌸</div>
+  <div class="sticker" aria-hidden="true">⭐</div>
+  <div class="sticker" aria-hidden="true">🎀</div>
+  <div class="sticker" aria-hidden="true">🌙</div>
+
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+
+  <div class="hero-text">
+    <div class="hero-eyebrow">✦ Colección kawaii 2025 ✦</div>
+    <h1>
+      Tu mundo<br>
+      <span class="outline-text">soñado</span>&nbsp;está<br>
+      <span class="block-text">aquí</span>
+    </h1>
+    <p>Peluches, accesorios y juguetes de tus personajes Sanrio favoritos. Magia pastel con entrega express.</p>
+    <div class="hero-btns">
+      <a href="#productos" class="btn-hard btn-rose">Explorar tienda ✦</a>
+      <a href="#categorias" class="btn-hard btn-ink">Ver colecciones</a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="win-box">
+      <div class="win-bar">
+        <div class="win-dot r"></div>
+        <div class="win-dot y"></div>
+        <div class="win-dot g"></div>
+        <div class="win-title">✦ Personajes ✦</div>
+      </div>
+      <div class="win-body">
+        <div class="char-showcase">
+          <div class="char-tile c1">🐱<div class="char-label">Hello Kitty</div></div>
+          <div class="char-tile c2">🌙<div class="char-label">Kuromi</div></div>
+          <div class="char-tile c3">🐶<div class="char-label">Cinnamoroll</div></div>
+          <div class="char-tile c4">🐻<div class="char-label">Pompompurin</div></div>
+          <div class="char-tile c5">🎀<div class="char-label">My Melody</div></div>
+          <div class="char-tile c6">🌟<div class="char-label">Pochacco</div></div>
+        </div>
+        <div class="win-tag">✨ +200 productos kawaii</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARRUSEL -->
+<div class="carousel-wrap" aria-label="Galería de productos">
+  <div class="carousel-track" id="carousel-track">
+    <div class="carousel-slide" style="background:linear-gradient(135deg,#FFE0EB,#FFF0F8)">
+      <div class="cs-emoji">🐱</div>
+      <div class="cs-info">
+        <div class="cs-char">Hello Kitty</div>
+        <div class="cs-name">Peluche arco iris edición especial</div>
+        <div class="cs-price">$12.990 ARS</div>
+      </div>
+    </div>
+    <div class="carousel-slide" style="background:linear-gradient(135deg,#EDE8FF,#F8F5FF)">
+      <div class="cs-emoji">🌙</div>
+      <div class="cs-info">
+        <div class="cs-char">Kuromi</div>
+        <div class="cs-name">Mochila escolar lila con bordado</div>
+        <div class="cs-price">$18.500 ARS</div>
+      </div>
+    </div>
+    <div class="carousel-slide" style="background:linear-gradient(135deg,#E8F8FF,#F0FCFF)">
+      <div class="cs-emoji">🐶</div>
+      <div class="cs-info">
+        <div class="cs-char">Cinnamoroll</div>
+        <div class="cs-name">Taza cerámica con tapa y cuchara</div>
+        <div class="cs-price">$8.200 ARS</div>
+      </div>
+    </div>
+    <div class="carousel-slide" style="background:linear-gradient(135deg,#FFF5CC,#FFFBE8)">
+      <div class="cs-emoji">🐻</div>
+      <div class="cs-info">
+        <div class="cs-char">Pompompurin</div>
+        <div class="cs-name">Set de papelería deluxe 6 piezas</div>
+        <div class="cs-price">$6.750 ARS</div>
+      </div>
+    </div>
+    <div class="carousel-slide" style="background:linear-gradient(135deg,#FFE8F8,#FFF0FC)">
+      <div class="cs-emoji">🎀</div>
+      <div class="cs-info">
+        <div class="cs-char">My Melody</div>
+        <div class="cs-name">Caja musical con luz LED pastel</div>
+        <div class="cs-price">$22.000 ARS</div>
+      </div>
+    </div>
+    <div class="carousel-slide" style="background:linear-gradient(135deg,#E8FFF3,#F0FFF8)">
+      <div class="cs-emoji">🌟</div>
+      <div class="cs-info">
+        <div class="cs-char">Pochacco</div>
+        <div class="cs-name">Estuche bordado multibolsillos menta</div>
+        <div class="cs-price">$9.990 ARS</div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Anterior">‹</button>
+  <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Siguiente">›</button>
+  <div class="carousel-dots" id="carousel-dots" aria-hidden="true"></div>
+</div>
+
+<!-- FEATURES STRIP -->
+<div class="features" role="list" aria-label="Beneficios">
+  <div class="feat-grid">
+    <div class="feat-item" role="listitem">
+      <div class="feat-icon" aria-hidden="true">📦</div>
+      <div class="feat-title">Envío express</div>
+      <div class="feat-text">A todo el país en 24–48 hs hábiles</div>
+    </div>
+    <div class="feat-item" role="listitem">
+      <div class="feat-icon" aria-hidden="true">✅</div>
+      <div class="feat-title">100% oficial</div>
+      <div class="feat-text">Productos Sanrio con licencia original</div>
+    </div>
+    <div class="feat-item" role="listitem">
+      <div class="feat-icon" aria-hidden="true">🎁</div>
+      <div class="feat-title">Packaging kawaii</div>
+      <div class="feat-text">Cada pedido llega envuelto con amor</div>
+    </div>
+    <div class="feat-item" role="listitem">
+      <div class="feat-icon" aria-hidden="true">💖</div>
+      <div class="feat-title">Devoluciones fáciles</div>
+      <div class="feat-text">30 días para cambios sin costo</div>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORÍAS -->
+<section class="categories" id="categorias">
+  <div class="section-head">
+    <div class="section-tag">✦ Colecciones</div>
+    <h2>Encuentra tu mundo ✦</h2>
+    <p>Todo lo que tu corazón kawaii desea en un solo lugar</p>
+  </div>
+  <div class="cat-grid">
+    <a class="cat-card" href="col-peluches.html" aria-label="Ver colección peluches, 48 productos">
+      <div class="cat-icon" aria-hidden="true">🧸</div>
+      <div class="cat-label">Peluches</div>
+      <div class="cat-count">48 productos</div>
+    </a>
+    <a class="cat-card" href="col-mochilas.html" aria-label="Ver colección mochilas, 32 productos">
+      <div class="cat-icon" aria-hidden="true">🎒</div>
+      <div class="cat-label">Mochilas</div>
+      <div class="cat-count">32 productos</div>
+    </a>
+    <a class="cat-card" href="col-papeleria.html" aria-label="Ver colección papelería, 65 productos">
+      <div class="cat-icon" aria-hidden="true">✏️</div>
+      <div class="cat-label">Papelería</div>
+      <div class="cat-count">65 productos</div>
+    </a>
+    <a class="cat-card" href="col-accesorios.html" aria-label="Ver colección accesorios, 51 productos">
+      <div class="cat-icon" aria-hidden="true">🍬</div>
+      <div class="cat-label">Accesorios</div>
+      <div class="cat-count">51 productos</div>
+    </a>
+    <a class="cat-card" href="col-juguetes.html" aria-label="Ver colección juguetes, 29 productos">
+      <div class="cat-icon" aria-hidden="true">🎮</div>
+      <div class="cat-label">Juguetes</div>
+      <div class="cat-count">29 productos</div>
+    </a>
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section class="products" id="productos">
+  <div class="section-head">
+    <div class="section-tag" style="background:var(--rose);">✦ Destacados</div>
+    <h2>Los más queridos ✦</h2>
+    <p>Favoritos de nuestra comunidad pastel</p>
+  </div>
+  <div class="prod-grid">
+
+    <article class="prod-card">
+      <div class="prod-img hk">
+        <span aria-hidden="true">🐱</span>
+        <span class="prod-badge badge-new">Nuevo</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-char">Hello Kitty</div>
+        <div class="prod-name">Peluche arco iris edición especial</div>
+        <div class="prod-footer">
+          <span class="prod-price">$12.990 <small>ARS</small></span>
+          <button class="add-btn"
+            aria-label="Agregar Peluche arco iris Hello Kitty al carrito"
+            data-name="Peluche arco iris edición especial"
+            data-char="Hello Kitty"
+            data-price="12990"
+            data-emoji="🐱"
+            data-bg="#FFE0EB">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img km">
+        <span aria-hidden="true">🌙</span>
+        <span class="prod-badge badge-hot">Popular</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-char">Kuromi</div>
+        <div class="prod-name">Mochila escolar lila con bordado</div>
+        <div class="prod-footer">
+          <span class="prod-price">$18.500 <small>ARS</small></span>
+          <button class="add-btn"
+            aria-label="Agregar Mochila Kuromi al carrito"
+            data-name="Mochila escolar lila con bordado"
+            data-char="Kuromi"
+            data-price="18500"
+            data-emoji="🌙"
+            data-bg="#EDE8FF">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img cn">
+        <span aria-hidden="true">🐶</span>
+        <span class="prod-badge badge-sale">Oferta</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-char">Cinnamoroll</div>
+        <div class="prod-name">Taza cerámica con tapa y cuchara</div>
+        <div class="prod-footer">
+          <span class="prod-price">$8.200 <small>ARS</small></span>
+          <button class="add-btn"
+            aria-label="Agregar Taza Cinnamoroll al carrito"
+            data-name="Taza cerámica con tapa y cuchara"
+            data-char="Cinnamoroll"
+            data-price="8200"
+            data-emoji="🐶"
+            data-bg="#E8F8FF">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img pp">
+        <span aria-hidden="true">🐻</span>
+        <span class="prod-badge badge-new">Nuevo</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-char">Pompompurin</div>
+        <div class="prod-name">Set de papelería deluxe 6 piezas</div>
+        <div class="prod-footer">
+          <span class="prod-price">$6.750 <small>ARS</small></span>
+          <button class="add-btn"
+            aria-label="Agregar Set Pompompurin al carrito"
+            data-name="Set de papelería deluxe 6 piezas"
+            data-char="Pompompurin"
+            data-price="6750"
+            data-emoji="🐻"
+            data-bg="#FFF5CC">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img mm">
+        <span aria-hidden="true">🎀</span>
+        <span class="prod-badge badge-hot">Popular</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-char">My Melody</div>
+        <div class="prod-name">Caja musical con luz LED pastel</div>
+        <div class="prod-footer">
+          <span class="prod-price">$22.000 <small>ARS</small></span>
+          <button class="add-btn"
+            aria-label="Agregar Caja musical My Melody al carrito"
+            data-name="Caja musical con luz LED pastel"
+            data-char="My Melody"
+            data-price="22000"
+            data-emoji="🎀"
+            data-bg="#FFE8F8">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img pc">
+        <span aria-hidden="true">🌟</span>
+        <span class="prod-badge badge-sale">Oferta</span>
+      </div>
+      <div class="prod-body">
+        <div class="prod-char">Pochacco</div>
+        <div class="prod-name">Estuche bordado multibolsillos menta</div>
+        <div class="prod-footer">
+          <span class="prod-price">$9.990 <small>ARS</small></span>
+          <button class="add-btn"
+            aria-label="Agregar Estuche Pochacco al carrito"
+            data-name="Estuche bordado multibolsillos menta"
+            data-char="Pochacco"
+            data-price="9990"
+            data-emoji="🌟"
+            data-bg="#E8FFF3">+</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="novedades">
+  <div class="section-tag" style="background:var(--rose); margin-bottom:0.8rem;">✦ Club Kawaii</div>
+  <h2>¡Sumate a nuestra comunidad! 🌸</h2>
+  <p>Preventas exclusivas, descuentos secretos y novedades directo a tu bandeja</p>
+  <div class="nl-row">
+    <label for="nl-email" class="visually-hidden">Tu correo electrónico</label>
+    <input class="nl-input" id="nl-email" type="email" placeholder="tu@email.com" autocomplete="email"/>
+    <button class="nl-btn">Suscribirme ✦</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto">
+  <div>
+    <div class="footer-logo">✦ PoP Market</div>
+    <div class="footer-desc">Juguetes y accesorios Sanrio con amor desde Buenos Aires. Magia pastel con entrega a todo el país.</div>
+  </div>
+  <div class="footer-col">
+    <h4>Tienda</h4>
+    <ul>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#productos">Más vendidos</a></li>
+      <li><a href="#categorias">Colecciones</a></li>
+      <li><a href="#productos">Ofertas</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Ayuda</h4>
+    <ul>
+      <li><a href="como-comprar.html">Cómo comprar</a></li>
+      <li><a href="envios-devoluciones.html">Envíos y devoluciones</a></li>
+      <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+      <li><a href="mailto:hola@popmarket.ar">hola@popmarket.ar</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2025 <span>✦ PoP Market</span> · Hecho con 💜 desde Buenos Aires · Productos Sanrio con licencia oficial
+</div>
+
+<!-- CARRITO DRAWER -->
+<div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+<aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Tu carrito">
+  <div class="cart-header">
+    <h2>🛒 Tu carrito</h2>
+    <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items" aria-live="polite">
+    <div class="cart-empty" id="cart-empty">
+      <span class="empty-icon">🛍️</span>
+      <p>Tu carrito está vacío</p>
+    </div>
+  </div>
+  <div class="cart-footer" id="cart-footer" style="display:none;">
+    <div class="free-shipping-bar" id="shipping-bar"></div>
+    <div class="cart-total-row">
+      <span class="cart-total-label">Total</span>
+      <span class="cart-total-amount" id="cart-total">$0 <small>ARS</small></span>
+    </div>
+    <button class="cart-checkout-btn" id="checkout-btn">
+      Confirmar pedido ✦
+    </button>
+  </div>
+</aside>
+
+<!-- MODAL CONFIRMAR PEDIDO -->
+<div class="modal-overlay" id="modal-overlay" aria-hidden="true"></div>
+<div class="modal" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-header">
+    <h2 id="modal-title">📦 Confirmar pedido</h2>
+    <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="modal-body">
+    <!-- Resumen items -->
+    <div class="modal-summary" id="modal-summary"></div>
+    <div class="modal-total-row">
+      <span>Total</span>
+      <span class="modal-total-price" id="modal-total"></span>
+    </div>
+
+    <!-- Nombre -->
+    <div class="modal-field">
+      <label class="modal-label" for="order-name">NOMBRE COMPLETO *</label>
+      <input class="modal-input" id="order-name" type="text" placeholder="Tu nombre y apellido" autocomplete="name"/>
+    </div>
+
+    <!-- Teléfono -->
+    <div class="modal-field">
+      <label class="modal-label" for="order-phone">TELÉFONO (WHATSAPP) *</label>
+      <input class="modal-input" id="order-phone" type="tel" placeholder="Ej: 3512345678" autocomplete="tel"/>
+    </div>
+
+    <!-- Forma de pago -->
+    <div class="modal-field">
+      <div class="modal-label">FORMA DE PAGO *</div>
+      <div class="modal-options" id="payment-options">
+        <button class="modal-option" data-group="payment" data-value="Transferencia">
+          <span aria-hidden="true">🏦</span> Transferencia
+        </button>
+        <button class="modal-option" data-group="payment" data-value="Efectivo">
+          <span aria-hidden="true">💵</span> Efectivo
+        </button>
+        <button class="modal-option" data-group="payment" data-value="Mercado Pago">
+          <span aria-hidden="true">📱</span> Mercado Pago
+        </button>
+        <button class="modal-option" data-group="payment" data-value="Débito/Crédito">
+          <span aria-hidden="true">💳</span> Débito/Crédito
+        </button>
+      </div>
+    </div>
+
+    <!-- Entrega -->
+    <div class="modal-field">
+      <div class="modal-label">¿CÓMO QUERÉS RECIBIRLO? *</div>
+      <div class="modal-options" id="delivery-options">
+        <button class="modal-option" data-group="delivery" data-value="Envío a domicilio">
+          <span aria-hidden="true">🚚</span> Envío a domicilio
+        </button>
+        <button class="modal-option" data-group="delivery" data-value="Retiro en local">
+          <span aria-hidden="true">🏠</span> Retiro en local
+        </button>
+      </div>
+    </div>
+
+    <!-- Error msg -->
+    <div class="modal-error" id="modal-error" style="display:none;">⚠️ Completá todos los campos para continuar.</div>
+  </div>
+  <div class="modal-footer">
+    <button class="modal-send-btn" id="modal-send-btn">
+      <span>📲 Enviar pedido por WhatsApp →</span>
+    </button>
+  </div>
+</div>
+
+<style>
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* ── MODAL ── */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(42,16,69,0.55);
+  z-index: 700;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s;
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+
+.modal {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.92);
+  width: 92%; max-width: 460px;
+  max-height: 90vh;
+  background: var(--cream);
+  border: 2.5px solid var(--ink);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 var(--lav);
+  z-index: 800;
+  display: flex; flex-direction: column;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
+  overflow: hidden;
+}
+.modal.open {
+  opacity: 1; pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  background: var(--ink);
+  padding: 1rem 1.4rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-shrink: 0;
+}
+.modal-header h2 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800; font-size: 1.1rem;
+  color: var(--rose);
+}
+.modal-close {
+  background: none; border: 2px solid var(--lav);
+  color: var(--lav); border-radius: 6px;
+  width: 32px; height: 32px; font-size: 1rem; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+.modal-close:hover { background: var(--rose); color: var(--ink); border-color: var(--rose); }
+
+.modal-body {
+  padding: 1.2rem 1.4rem;
+  overflow-y: auto;
+  flex: 1;
+  display: flex; flex-direction: column; gap: 1rem;
+}
+
+.modal-summary {
+  display: flex; flex-direction: column; gap: 0.4rem;
+}
+.modal-summary-item {
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.88rem; color: var(--plum); font-weight: 600;
+}
+.modal-summary-item span:last-child { font-family: 'Baloo 2', cursive; font-weight: 700; color: var(--ink); }
+
+.modal-total-row {
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 2px solid var(--lav);
+  padding-top: 0.7rem;
+  font-family: 'Baloo 2', cursive; font-weight: 800;
+  font-size: 1rem; color: var(--ink);
+}
+.modal-total-price { font-size: 1.3rem; color: var(--plum); }
+
+.modal-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.modal-label {
+  font-family: 'Baloo 2', cursive; font-weight: 700;
+  font-size: 0.68rem; letter-spacing: 1.5px;
+  color: var(--plum); text-transform: uppercase;
+}
+.modal-input {
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--lav);
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem; font-weight: 600;
+  background: var(--white);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.modal-input:focus { border-color: var(--plum); box-shadow: 0 0 0 3px rgba(200,180,250,0.4); }
+.modal-input.error { border-color: #FF6B6B; box-shadow: 0 0 0 3px rgba(255,107,107,0.2); }
+
+.modal-options {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem;
+}
+.modal-option {
+  background: var(--white);
+  border: 2px solid var(--lav);
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700; font-size: 0.88rem;
+  color: var(--ink); cursor: pointer;
+  display: flex; align-items: center; gap: 0.5rem;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+  text-align: left;
+}
+.modal-option:hover { background: #F5F0FF; border-color: var(--plum); }
+.modal-option.selected {
+  background: var(--lav);
+  border-color: var(--plum);
+  box-shadow: 2px 2px 0 var(--plum);
+  color: var(--ink);
+}
+.modal-option.error-border { border-color: #FF6B6B; }
+
+.modal-error {
+  background: #FFF0F0; border: 1.5px solid #FF6B6B;
+  border-radius: 8px; padding: 0.6rem 1rem;
+  font-size: 0.85rem; font-weight: 600; color: #CC0000;
+}
+
+.modal-footer {
+  padding: 1rem 1.4rem 1.4rem;
+  flex-shrink: 0;
+}
+.modal-send-btn {
+  width: 100%;
+  background: #25D366;
+  color: var(--white);
+  border: 2.5px solid #128C4B;
+  border-radius: 12px;
+  padding: 1rem;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800; font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #128C4B;
+  transition: transform 0.1s, box-shadow 0.1s;
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+}
+.modal-send-btn:hover { transform: translate(2px,2px); box-shadow: 2px 2px 0 #128C4B; }
+</style>
+
+<script>
+  // ── CARRUSEL ──
+  (function() {
+    const track  = document.getElementById('carousel-track');
+    const dotsEl = document.getElementById('carousel-dots');
+    const slides = track.querySelectorAll('.carousel-slide');
+    let current  = 0;
+    let timer;
+
+    // Crear dots
+    slides.forEach((_, i) => {
+      const d = document.createElement('button');
+      d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      d.setAttribute('aria-label', `Ir a slide ${i+1}`);
+      d.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(d);
+    });
+
+    function goTo(n) {
+      current = (n + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dotsEl.querySelectorAll('.carousel-dot').forEach((d, i) =>
+        d.classList.toggle('active', i === current)
+      );
+      resetTimer();
+    }
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(current + 1), 4000);
+    }
+
+    document.getElementById('carousel-prev').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('carousel-next').addEventListener('click', () => goTo(current + 1));
+
+    // Swipe táctil
+    let startX = 0;
+    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    });
+
+    resetTimer();
+  })();
+
+  // ── CONFIGURACIÓN ──
+  // Cambiá este número por el del dueño (código de país sin + ni espacios)
+  const WHATSAPP_NUMBER = '5493512070696';
+
+  // ── CARRITO ── (sincronizado con localStorage)
+  const STORAGE_KEY = 'popmarket_cart';
+  function loadCart() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; } catch { return []; } }
+  function saveCart() { localStorage.setItem(STORAGE_KEY, JSON.stringify(cart)); }
+  let cart = loadCart();
+
+  const cartToggle   = document.getElementById('cart-toggle');
+  const cartClose    = document.getElementById('cart-close');
+  const cartOverlay  = document.getElementById('cart-overlay');
+  const cartDrawer   = document.getElementById('cart-drawer');
+  const cartItemsEl  = document.getElementById('cart-items');
+  const cartEmpty    = document.getElementById('cart-empty');
+  const cartFooter   = document.getElementById('cart-footer');
+  const cartTotal    = document.getElementById('cart-total');
+  const cartCountEl  = document.getElementById('cart-count');
+  const shippingBar  = document.getElementById('shipping-bar');
+
+  function openCart() {
+    cartDrawer.classList.add('open');
+    cartOverlay.classList.add('open');
+    cartOverlay.setAttribute('aria-hidden', 'false');
+    cartClose.focus();
+  }
+  function closeCart() {
+    cartDrawer.classList.remove('open');
+    cartOverlay.classList.remove('open');
+    cartOverlay.setAttribute('aria-hidden', 'true');
+    cartToggle.focus();
+  }
+
+  cartToggle.addEventListener('click', openCart);
+  cartClose.addEventListener('click', closeCart);
+  cartOverlay.addEventListener('click', closeCart);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCart(); });
+
+  function formatPrice(n) {
+    return '$' + n.toLocaleString('es-AR') + ' <small>ARS</small>';
+  }
+
+  function renderCart() {
+    const totalItems = cart.reduce((s, i) => s + i.qty, 0);
+    const totalPrice = cart.reduce((s, i) => s + i.price * i.qty, 0);
+
+    // Contador nav
+    cartCountEl.textContent = totalItems;
+    cartCountEl.classList.toggle('visible', totalItems > 0);
+
+    if (cart.length === 0) {
+      cartEmpty.style.display = '';
+      cartFooter.style.display = 'none';
+      cartItemsEl.innerHTML = '';
+      cartItemsEl.appendChild(cartEmpty);
+      return;
+    }
+
+    cartEmpty.style.display = 'none';
+    cartFooter.style.display = '';
+
+    // Items
+    cartItemsEl.innerHTML = '';
+    cart.forEach((item, idx) => {
+      const el = document.createElement('div');
+      el.className = 'cart-item';
+      el.innerHTML = `
+        <div class="cart-item-emoji" style="background:${item.bg}">${item.emoji}</div>
+        <div class="cart-item-info">
+          <div class="cart-item-char">${item.char}</div>
+          <div class="cart-item-name">${item.name}</div>
+          <div class="cart-item-price">${formatPrice(item.price)}</div>
+        </div>
+        <div class="cart-item-controls">
+          <button class="qty-btn" data-idx="${idx}" data-action="dec" aria-label="Quitar uno de ${item.name}">−</button>
+          <span class="qty-num" aria-label="Cantidad: ${item.qty}">${item.qty}</span>
+          <button class="qty-btn" data-idx="${idx}" data-action="inc" aria-label="Agregar uno más de ${item.name}">+</button>
+        </div>
+      `;
+      cartItemsEl.appendChild(el);
+    });
+
+    // Total
+    cartTotal.innerHTML = formatPrice(totalPrice);
+
+    // Barra envío gratis
+    const FREE_THRESHOLD = 30000;
+    if (totalPrice >= FREE_THRESHOLD) {
+      shippingBar.innerHTML = '🎉 ¡Conseguiste <strong>envío gratis</strong>!';
+    } else {
+      const diff = FREE_THRESHOLD - totalPrice;
+      shippingBar.innerHTML = `Te faltan <strong>${formatPrice(diff)}</strong> para envío gratis`;
+    }
+  }
+
+  // Delegar clicks en controles de cantidad
+  cartItemsEl.addEventListener('click', e => {
+    const btn = e.target.closest('.qty-btn');
+    if (!btn) return;
+    const idx = parseInt(btn.dataset.idx);
+    if (btn.dataset.action === 'inc') {
+      cart[idx].qty++;
+    } else {
+      cart[idx].qty--;
+      if (cart[idx].qty <= 0) cart.splice(idx, 1);
+    }
+    saveCart();
+    renderCart();
+  });
+
+  // Botones agregar
+  document.querySelectorAll('.add-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const { name, char, price, emoji, bg } = this.dataset;
+      const existing = cart.find(i => i.name === name);
+      if (existing) {
+        existing.qty++;
+      } else {
+        cart.push({ name, char, price: parseInt(price), emoji, bg, qty: 1 });
+      }
+      saveCart();
+      renderCart();
+
+      // Feedback visual
+      const orig = this.textContent;
+      this.textContent = '✓';
+      this.style.background = 'var(--mint)';
+      this.style.transform = 'translate(1px,1px)';
+      setTimeout(() => {
+        this.textContent = orig;
+        this.style.background = '';
+        this.style.transform = '';
+      }, 900);
+
+      openCart();
+    });
+  });
+
+  // ── CHAR TILES ──
+  document.querySelectorAll('.char-tile').forEach(tile => {
+    tile.addEventListener('click', () => {
+      document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // ── MODAL CONFIRMAR PEDIDO ──
+  const modalOverlay  = document.getElementById('modal-overlay');
+  const orderModal    = document.getElementById('order-modal');
+  const modalClose    = document.getElementById('modal-close');
+  const modalSummary  = document.getElementById('modal-summary');
+  const modalTotalEl  = document.getElementById('modal-total');
+  const modalSendBtn  = document.getElementById('modal-send-btn');
+  const modalError    = document.getElementById('modal-error');
+  const orderName     = document.getElementById('order-name');
+  const orderPhone    = document.getElementById('order-phone');
+
+  let selectedPayment  = '';
+  let selectedDelivery = '';
+
+  function openModal() {
+    // Llenar resumen
+    modalSummary.innerHTML = '';
+    cart.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'modal-summary-item';
+      div.innerHTML = `
+        <span>${item.qty}× ${item.emoji} ${item.name}</span>
+        <span>$${(item.price * item.qty).toLocaleString('es-AR')}</span>
+      `;
+      modalSummary.appendChild(div);
+    });
+    const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+    modalTotalEl.textContent = '$' + total.toLocaleString('es-AR') + ' ARS';
+
+    // Resetear selecciones
+    selectedPayment = '';
+    selectedDelivery = '';
+    document.querySelectorAll('.modal-option').forEach(b => b.classList.remove('selected', 'error-border'));
+    orderName.value = '';
+    orderPhone.value = '';
+    orderName.classList.remove('error');
+    orderPhone.classList.remove('error');
+    modalError.style.display = 'none';
+
+    modalOverlay.classList.add('open');
+    orderModal.classList.add('open');
+    modalOverlay.setAttribute('aria-hidden', 'false');
+    orderModal.setAttribute('aria-hidden', 'false');
+    setTimeout(() => modalClose.focus(), 100);
+  }
+
+  function closeModal() {
+    modalOverlay.classList.remove('open');
+    orderModal.classList.remove('open');
+    modalOverlay.setAttribute('aria-hidden', 'true');
+    orderModal.setAttribute('aria-hidden', 'true');
+  }
+
+  document.getElementById('checkout-btn').addEventListener('click', () => {
+    if (cart.length === 0) return;
+    openModal();
+  });
+  modalClose.addEventListener('click', closeModal);
+  modalOverlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Selección de opciones (pago / entrega)
+  document.querySelectorAll('.modal-option').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const group = this.dataset.group;
+      document.querySelectorAll(`.modal-option[data-group="${group}"]`).forEach(b => {
+        b.classList.remove('selected', 'error-border');
+      });
+      this.classList.add('selected');
+      if (group === 'payment')  selectedPayment  = this.dataset.value;
+      if (group === 'delivery') selectedDelivery = this.dataset.value;
+    });
+  });
+
+  // Enviar por WhatsApp
+  modalSendBtn.addEventListener('click', function() {
+    let valid = true;
+    modalError.style.display = 'none';
+
+    // Validar campos
+    if (!orderName.value.trim()) { orderName.classList.add('error'); valid = false; }
+    else orderName.classList.remove('error');
+
+    if (!orderPhone.value.trim()) { orderPhone.classList.add('error'); valid = false; }
+    else orderPhone.classList.remove('error');
+
+    if (!selectedPayment) {
+      document.querySelectorAll('.modal-option[data-group="payment"]').forEach(b => b.classList.add('error-border'));
+      valid = false;
+    }
+    if (!selectedDelivery) {
+      document.querySelectorAll('.modal-option[data-group="delivery"]').forEach(b => b.classList.add('error-border'));
+      valid = false;
+    }
+
+    if (!valid) {
+      modalError.style.display = '';
+      return;
+    }
+
+    // Armar mensaje WhatsApp
+    const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
+    const FREE_THRESHOLD = 30000;
+
+    let msg = '¡Hola! Quiero hacer el siguiente pedido 🛍️\n\n';
+    cart.forEach(item => {
+      msg += `${item.emoji} *${item.name}* (${item.char})\n`;
+      msg += `   ${item.qty} × $${item.price.toLocaleString('es-AR')} = $${(item.price * item.qty).toLocaleString('es-AR')} ARS\n\n`;
+    });
+    msg += `━━━━━━━━━━━━━━\n`;
+    msg += `💰 *Total: $${total.toLocaleString('es-AR')} ARS*\n`;
+    msg += `📦 Envío: ${total >= FREE_THRESHOLD ? 'Gratis 🎉' : selectedDelivery}\n`;
+    msg += `💳 Pago: ${selectedPayment}\n`;
+    msg += `━━━━━━━━━━━━━━\n\n`;
+    msg += `👤 *Nombre:* ${orderName.value.trim()}\n`;
+    msg += `📱 *Teléfono:* ${orderPhone.value.trim()}\n\n`;
+    msg += '¡Gracias! Espero su confirmación ✨';
+
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+
+    // Feedback y abrir WA
+    this.querySelector('span').textContent = 'Abriendo WhatsApp... ✓';
+    this.style.background = '#128C4B';
+    setTimeout(() => {
+      window.open(url, '_blank');
+      cart = [];
+      saveCart();
+      renderCart();
+      closeModal();
+      this.querySelector('span').textContent = '📲 Enviar pedido por WhatsApp →';
+      this.style.background = '';
+    }, 700);
+  });
+
+  // ── NEWSLETTER con validación ──
+  document.querySelector('.nl-btn').addEventListener('click', function() {
+    const input = document.querySelector('.nl-input');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!input.value || !emailRegex.test(input.value)) {
+      input.classList.add('error');
+      input.focus();
+      setTimeout(() => input.classList.remove('error'), 2000);
+      return;
+    }
+    this.textContent = '¡Listo! ✓';
+    this.style.background = 'var(--plum)';
+    input.value = '';
+    setTimeout(() => {
+      this.textContent = 'Suscribirme ✦';
+      this.style.background = '';
+    }, 2500);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✦ Preguntas frecuentes · PoP Market</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    .page-hero { background: linear-gradient(135deg, var(--butter), var(--gold)); }
+
+    .page-content { max-width: 750px; gap: 1rem; }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: 14px;
+      border: 2px solid var(--lav);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 1.1rem 1.4rem;
+      font-family: 'Baloo 2', cursive;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .faq-question:hover { background: #F5F0FF; }
+    .faq-question[aria-expanded="true"] { background: var(--lav); color: var(--ink); }
+
+    .faq-arrow {
+      font-size: 1rem;
+      transition: transform .25s;
+      flex-shrink: 0;
+      aria-hidden: true;
+    }
+    .faq-question[aria-expanded="true"] .faq-arrow { transform: rotate(180deg); }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease, padding .3s;
+      font-size: .92rem;
+      color: var(--plum);
+      line-height: 1.7;
+      padding: 0 1.4rem;
+    }
+    .faq-answer.open {
+      max-height: 300px;
+      padding: .2rem 1.4rem 1.2rem;
+    }
+
+    .btn-wrap { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span class="star" aria-hidden="true">✦</span> PoP Market</a>
+  <ul>
+    <li><a href="index.html#categorias">Colecciones</a></li>
+    <li><a href="index.html#productos">Productos</a></li>
+    <li><a href="index.html#novedades">Novedades</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <a href="index.html" class="nav-cart">← Volver a la tienda</a>
+</nav>
+
+<div class="page-hero">
+  <h1>💬 Preguntas frecuentes</h1>
+  <p>Respuestas a todo lo que necesitás saber antes de comprar</p>
+</div>
+
+<div class="page-content">
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+      ¿Los productos son originales Sanrio?
+      <span class="faq-arrow" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-answer" id="faq-1" role="region">Sí, todos nuestros productos cuentan con licencia oficial de Sanrio. Cada artículo incluye el sello de autenticidad correspondiente.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+      ¿Cuánto tarda en llegar mi pedido?
+      <span class="faq-arrow" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-answer" id="faq-2" role="region">Para CABA y GBA el envío express demora 24–48 hs hábiles. Para el interior del país, entre 3 y 7 días hábiles según la zona.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+      ¿Puedo rastrear mi pedido?
+      <span class="faq-arrow" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-answer" id="faq-3" role="region">¡Sí! Una vez despachado tu pedido, recibirás un email con el número de seguimiento para rastrearlo en tiempo real.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+      ¿Qué métodos de pago aceptan?
+      <span class="faq-arrow" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-answer" id="faq-4" role="region">Aceptamos tarjetas de crédito y débito (Visa, Mastercard, American Express), transferencia bancaria y Mercado Pago. Las cuotas sin interés dependen del banco emisor.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+      ¿Puedo cambiar o devolver un producto?
+      <span class="faq-arrow" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-answer" id="faq-5" role="region">Sí, tenés 30 días desde la recepción para solicitar un cambio o devolución sin costo, siempre que el producto esté en su embalaje original y sin uso.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+      ¿Hacen envíos internacionales?
+      <span class="faq-arrow" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-answer" id="faq-6" role="region">Por el momento solo realizamos envíos dentro de Argentina. Estamos trabajando para expandirnos a más países próximamente. ✨</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+      ¿Cómo puedo contactarlas?
+      <span class="faq-arrow" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-answer" id="faq-7" role="region">Podés escribirnos a <strong>hola@popmarket.ar</strong> o por Instagram <strong>@popmarketar</strong>. Respondemos en menos de 24 hs hábiles.</div>
+  </div>
+
+  <div class="btn-wrap">
+    <a href="index.html" class="back-btn">← Volver a la tienda</a>
+  </div>
+
+</div>
+
+<footer id="contacto">
+  <div>
+    <div class="footer-logo">✦ PoP Market</div>
+    <div class="footer-desc">Juguetes y accesorios Sanrio con amor desde Buenos Aires. Magia pastel con entrega a todo el país.</div>
+  </div>
+  <div class="footer-col">
+    <h4>Tienda</h4>
+    <ul>
+      <li><a href="index.html#novedades">Novedades</a></li>
+      <li><a href="index.html#productos">Más vendidos</a></li>
+      <li><a href="index.html#categorias">Colecciones</a></li>
+      <li><a href="index.html#productos">Ofertas</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Ayuda</h4>
+    <ul>
+      <li><a href="como-comprar.html">Cómo comprar</a></li>
+      <li><a href="envios-devoluciones.html">Envíos y devoluciones</a></li>
+      <li><a href="preguntas-frecuentes.html" aria-current="page">Preguntas frecuentes</a></li>
+      <li><a href="mailto:hola@popmarket.ar">hola@popmarket.ar</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2025 <span>✦ PoP Market</span> · Hecho con 💜 desde Buenos Aires
+</div>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      // cerrar todos
+      document.querySelectorAll('.faq-question').forEach(b => {
+        b.setAttribute('aria-expanded', 'false');
+        b.nextElementSibling.classList.remove('open');
+      });
+
+      // abrir el clickeado si estaba cerrado
+      if (!isOpen) {
+        btn.setAttribute('aria-expanded', 'true');
+        answer.classList.add('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

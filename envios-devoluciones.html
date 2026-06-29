@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✦ Envíos y devoluciones · PoP Market</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    .page-hero { background: linear-gradient(135deg, var(--sky), var(--mint)); }
+
+    .page-content { gap: 2rem; }
+
+    .info-block h2 {
+      font-family: 'Baloo 2', cursive;
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      padding-bottom: .4rem;
+      border-bottom: 2px solid var(--sky);
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .92rem;
+    }
+    .info-table th {
+      background: var(--ink);
+      color: var(--rose);
+      font-family: 'Baloo 2', cursive;
+      font-weight: 700;
+      padding: .7rem 1rem;
+      text-align: left;
+    }
+    .info-table td {
+      padding: .65rem 1rem;
+      border-bottom: 1px solid #E8DAFF;
+      color: var(--plum);
+    }
+    .info-table tr:nth-child(even) td { background: #F5F0FF; }
+
+    .info-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .info-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 1.4rem;
+      border: 2px solid var(--mint);
+      box-shadow: 3px 3px 0 var(--mint);
+    }
+    .info-card .icon { font-size: 1.8rem; margin-bottom: .5rem; }
+    .info-card h3 {
+      font-family: 'Baloo 2', cursive;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: .4rem;
+      color: var(--ink);
+    }
+    .info-card p { font-size: .88rem; color: var(--plum); line-height: 1.6; }
+
+    @media (max-width: 540px) {
+      .info-cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span class="star" aria-hidden="true">✦</span> PoP Market</a>
+  <ul>
+    <li><a href="index.html#categorias">Colecciones</a></li>
+    <li><a href="index.html#productos">Productos</a></li>
+    <li><a href="index.html#novedades">Novedades</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <a href="index.html" class="nav-cart">← Volver a la tienda</a>
+</nav>
+
+<div class="page-hero">
+  <h1>📦 Envíos y devoluciones</h1>
+  <p>Todo lo que necesitás saber para recibir tu pedido kawaii sin dramas</p>
+</div>
+
+<div class="page-content">
+
+  <div class="info-block">
+    <h2>📬 Tiempos de envío</h2>
+    <table class="info-table">
+      <thead>
+        <tr>
+          <th scope="col">Destino</th>
+          <th scope="col">Modalidad</th>
+          <th scope="col">Tiempo estimado</th>
+          <th scope="col">Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CABA y GBA</td>
+          <td>Express</td>
+          <td>24–48 hs hábiles</td>
+          <td>$1.500</td>
+        </tr>
+        <tr>
+          <td>Interior del país</td>
+          <td>Estándar</td>
+          <td>3–7 días hábiles</td>
+          <td>$2.800</td>
+        </tr>
+        <tr>
+          <td>Todo el país</td>
+          <td>Gratis en compras +$30.000</td>
+          <td>Según destino</td>
+          <td>$0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="info-block">
+    <h2>🔄 Política de devoluciones</h2>
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="icon" aria-hidden="true">📅</div>
+        <h3>30 días para devolver</h3>
+        <p>Tenés 30 días desde la recepción del pedido para solicitar un cambio o devolución sin costo.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon" aria-hidden="true">📦</div>
+        <h3>Producto sin uso</h3>
+        <p>El producto debe estar en su embalaje original, sin señales de uso y con todos sus accesorios.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon" aria-hidden="true">💸</div>
+        <h3>Reintegro inmediato</h3>
+        <p>Una vez recibido el producto, el reintegro se acredita en 3–5 días hábiles por el mismo medio de pago.</p>
+      </div>
+      <div class="info-card">
+        <div class="icon" aria-hidden="true">📧</div>
+        <h3>¿Cómo iniciar?</h3>
+        <p>Escribinos a <strong>hola@popmarket.ar</strong> con tu número de pedido y motivo de devolución.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-wrap">
+    <a href="index.html" class="back-btn">← Volver a la tienda</a>
+  </div>
+
+</div>
+
+<footer id="contacto">
+  <div>
+    <div class="footer-logo">✦ PoP Market</div>
+    <div class="footer-desc">Juguetes y accesorios Sanrio con amor desde Buenos Aires. Magia pastel con entrega a todo el país.</div>
+  </div>
+  <div class="footer-col">
+    <h4>Tienda</h4>
+    <ul>
+      <li><a href="index.html#novedades">Novedades</a></li>
+      <li><a href="index.html#productos">Más vendidos</a></li>
+      <li><a href="index.html#categorias">Colecciones</a></li>
+      <li><a href="index.html#productos">Ofertas</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Ayuda</h4>
+    <ul>
+      <li><a href="como-comprar.html">Cómo comprar</a></li>
+      <li><a href="envios-devoluciones.html" aria-current="page">Envíos y devoluciones</a></li>
+      <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+      <li><a href="mailto:hola@popmarket.ar">hola@popmarket.ar</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2025 <span>✦ PoP Market</span> · Hecho con 💜 desde Buenos Aires
+</div>
+
+</body>
+</html>

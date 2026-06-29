@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✦ Accesorios · PoP Market</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    .page-hero { background: linear-gradient(135deg, #FFF3B0, #FFFBE8); }
+    .page-hero h1 { color: var(--ink); }
+    .page-hero p  { color: var(--plum); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><span class="star" aria-hidden="true">✦</span> PoP Market</a>
+  <ul>
+    <li><a href="index.html#categorias">Colecciones</a></li>
+    <li><a href="index.html#productos">Productos</a></li>
+    <li><a href="index.html#novedades">Novedades</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-cart" id="cart-toggle" aria-label="Abrir carrito">
+    🛒 Mi carrito
+    <span class="cart-count" id="cart-count" aria-live="polite"></span>
+  </button>
+</nav>
+
+<div class="page-hero">
+  <h1>🍬 Accesorios</h1>
+  <p>Complementos que hacen la diferencia · 51 productos</p>
+</div>
+
+<div class="page-content" style="max-width:1100px;">
+  <div class="prod-grid" style="width:100%;">
+
+    <article class="prod-card">
+      <div class="prod-img pc"><span aria-hidden="true">🌟</span><span class="prod-badge badge-sale">Oferta</span></div>
+      <div class="prod-body">
+        <div class="prod-char">Pochacco</div>
+        <div class="prod-name">Estuche bordado multibolsillos menta</div>
+        <div class="prod-footer">
+          <span class="prod-price">$9.990 <small>ARS</small></span>
+          <button class="add-btn" aria-label="Agregar al carrito" data-name="Estuche bordado multibolsillos menta" data-char="Pochacco" data-price="9990" data-emoji="🌟" data-bg="#E8FFF3">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img hk"><span aria-hidden="true">🐱</span><span class="prod-badge badge-hot">Popular</span></div>
+      <div class="prod-body">
+        <div class="prod-char">Hello Kitty</div>
+        <div class="prod-name">Set de clips y broches metálicos x12</div>
+        <div class="prod-footer">
+          <span class="prod-price">$2.800 <small>ARS</small></span>
+          <button class="add-btn" aria-label="Agregar al carrito" data-name="Set de clips y broches metálicos x12" data-char="Hello Kitty" data-price="2800" data-emoji="🐱" data-bg="#FFE0EB">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img mm"><span aria-hidden="true">🎀</span><span class="prod-badge badge-new">Nuevo</span></div>
+      <div class="prod-body">
+        <div class="prod-char">My Melody</div>
+        <div class="prod-name">Pinches y hebillas set x8 colores pastel</div>
+        <div class="prod-footer">
+          <span class="prod-price">$3.900 <small>ARS</small></span>
+          <button class="add-btn" aria-label="Agregar al carrito" data-name="Pinches y hebillas set x8 colores pastel" data-char="My Melody" data-price="3900" data-emoji="🎀" data-bg="#FFE8F8">+</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="prod-card">
+      <div class="prod-img cn"><span aria-hidden="true">🐶</span><span class="prod-badge badge-sale">Oferta</span></div>
+      <div class="prod-body">
+        <div class="prod-char">Cinnamoroll</div>
+        <div class="prod-name">Porta auriculares silicona con llavero</div>
+        <div class="prod-footer">
+          <span class="prod-price">$5.100 <small>ARS</small></span>
+          <button class="add-btn" aria-label="Agregar al carrito" data-name="Porta auriculares silicona con llavero" data-char="Cinnamoroll" data-price="5100" data-emoji="🐶" data-bg="#E8F8FF">+</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <div class="btn-wrap">
+    <a href="index.html#categorias" class="back-btn">← Volver a colecciones</a>
+  </div>
+</div>
+
+<footer id="contacto">
+  <div>
+    <div class="footer-logo">✦ PoP Market</div>
+    <div class="footer-desc">Juguetes y accesorios Sanrio con amor desde Buenos Aires. Magia pastel con entrega a todo el país.</div>
+  </div>
+  <div class="footer-col">
+    <h4>Colecciones</h4>
+    <ul>
+      <li><a href="col-peluches.html">Peluches</a></li>
+      <li><a href="col-mochilas.html">Mochilas</a></li>
+      <li><a href="col-papeleria.html">Papelería</a></li>
+      <li><a href="col-accesorios.html" aria-current="page">Accesorios</a></li>
+      <li><a href="col-juguetes.html">Juguetes</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Ayuda</h4>
+    <ul>
+      <li><a href="como-comprar.html">Cómo comprar</a></li>
+      <li><a href="envios-devoluciones.html">Envíos y devoluciones</a></li>
+      <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+      <li><a href="mailto:hola@popmarket.ar">hola@popmarket.ar</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">© 2025 <span>✦ PoP Market</span> · Hecho con 💜 desde Buenos Aires</div>
+
+<!-- CARRITO DRAWER -->
+<div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+<aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Tu carrito">
+  <div class="cart-header">
+    <h2>🛒 Tu carrito</h2>
+    <button class="cart-close" id="cart-close" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="cart-items" id="cart-items" aria-live="polite">
+    <div class="cart-empty" id="cart-empty"><span class="empty-icon">🛍️</span><p>Tu carrito está vacío</p></div>
+  </div>
+  <div class="cart-footer" id="cart-footer" style="display:none;">
+    <div class="free-shipping-bar" id="shipping-bar"></div>
+    <div class="cart-total-row">
+      <span class="cart-total-label">Total</span>
+      <span class="cart-total-amount" id="cart-total">$0 <small>ARS</small></span>
+    </div>
+    <button class="cart-checkout-btn" id="checkout-btn">Confirmar pedido ✦</button>
+  </div>
+</aside>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" aria-hidden="true"></div>
+<div class="modal" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-header">
+    <h2 id="modal-title">📦 Confirmar pedido</h2>
+    <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+  </div>
+  <div class="modal-body">
+    <div class="modal-summary" id="modal-summary"></div>
+    <div class="modal-total-row"><span>Total</span><span class="modal-total-price" id="modal-total"></span></div>
+    <div class="modal-field">
+      <label class="modal-label" for="order-name">NOMBRE COMPLETO *</label>
+      <input class="modal-input" id="order-name" type="text" placeholder="Tu nombre y apellido" autocomplete="name"/>
+    </div>
+    <div class="modal-field">
+      <label class="modal-label" for="order-phone">TELÉFONO (WHATSAPP) *</label>
+      <input class="modal-input" id="order-phone" type="tel" placeholder="Ej: 3512345678" autocomplete="tel"/>
+    </div>
+    <div class="modal-field">
+      <div class="modal-label">FORMA DE PAGO *</div>
+      <div class="modal-options">
+        <button class="modal-option" data-group="payment" data-value="Transferencia"><span aria-hidden="true">🏦</span> Transferencia</button>
+        <button class="modal-option" data-group="payment" data-value="Efectivo"><span aria-hidden="true">💵</span> Efectivo</button>
+        <button class="modal-option" data-group="payment" data-value="Mercado Pago"><span aria-hidden="true">📱</span> Mercado Pago</button>
+        <button class="modal-option" data-group="payment" data-value="Débito/Crédito"><span aria-hidden="true">💳</span> Débito/Crédito</button>
+      </div>
+    </div>
+    <div class="modal-field">
+      <div class="modal-label">¿CÓMO QUERÉS RECIBIRLO? *</div>
+      <div class="modal-options">
+        <button class="modal-option" data-group="delivery" data-value="Envío a domicilio"><span aria-hidden="true">🚚</span> Envío a domicilio</button>
+        <button class="modal-option" data-group="delivery" data-value="Retiro en local"><span aria-hidden="true">🏠</span> Retiro en local</button>
+      </div>
+    </div>
+    <div class="modal-error" id="modal-error" style="display:none;">⚠️ Completá todos los campos para continuar.</div>
+  </div>
+  <div class="modal-footer">
+    <button class="modal-send-btn" id="modal-send-btn"><span>📲 Enviar pedido por WhatsApp →</span></button>
+  </div>
+</div>
+
+<style>
+.modal-overlay{position:fixed;inset:0;background:rgba(42,16,69,0.55);z-index:700;opacity:0;pointer-events:none;transition:opacity 0.25s}.modal-overlay.open{opacity:1;pointer-events:all}.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.92);width:92%;max-width:460px;max-height:90vh;background:var(--cream);border:2.5px solid var(--ink);border-radius:18px;box-shadow:8px 8px 0 var(--lav);z-index:800;display:flex;flex-direction:column;opacity:0;pointer-events:none;transition:opacity 0.25s,transform 0.25s;overflow:hidden}.modal.open{opacity:1;pointer-events:all;transform:translate(-50%,-50%) scale(1)}.modal-header{background:var(--ink);padding:1rem 1.4rem;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}.modal-header h2{font-family:'Baloo 2',cursive;font-weight:800;font-size:1.1rem;color:var(--rose)}.modal-close{background:none;border:2px solid var(--lav);color:var(--lav);border-radius:6px;width:32px;height:32px;font-size:1rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.15s,color 0.15s}.modal-close:hover{background:var(--rose);color:var(--ink);border-color:var(--rose)}.modal-body{padding:1.2rem 1.4rem;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:1rem}.modal-summary{display:flex;flex-direction:column;gap:0.4rem}.modal-summary-item{display:flex;justify-content:space-between;align-items:center;font-size:0.88rem;color:var(--plum);font-weight:600}.modal-summary-item span:last-child{font-family:'Baloo 2',cursive;font-weight:700;color:var(--ink)}.modal-total-row{display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--lav);padding-top:0.7rem;font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;color:var(--ink)}.modal-total-price{font-size:1.3rem;color:var(--plum)}.modal-field{display:flex;flex-direction:column;gap:0.4rem}.modal-label{font-family:'Baloo 2',cursive;font-weight:700;font-size:0.68rem;letter-spacing:1.5px;color:var(--plum);text-transform:uppercase}.modal-input{padding:0.7rem 1rem;border:2px solid var(--lav);border-radius:8px;font-family:'Quicksand',sans-serif;font-size:0.95rem;font-weight:600;background:var(--white);color:var(--ink);outline:none;transition:border-color 0.15s,box-shadow 0.15s}.modal-input:focus{border-color:var(--plum);box-shadow:0 0 0 3px rgba(200,180,250,0.4)}.modal-input.error{border-color:#FF6B6B;box-shadow:0 0 0 3px rgba(255,107,107,0.2)}.modal-options{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem}.modal-option{background:var(--white);border:2px solid var(--lav);border-radius:10px;padding:0.65rem 0.8rem;font-family:'Quicksand',sans-serif;font-weight:700;font-size:0.88rem;color:var(--ink);cursor:pointer;display:flex;align-items:center;gap:0.5rem;transition:border-color 0.15s,background 0.15s,box-shadow 0.15s;text-align:left}.modal-option:hover{background:#F5F0FF;border-color:var(--plum)}.modal-option.selected{background:var(--lav);border-color:var(--plum);box-shadow:2px 2px 0 var(--plum);color:var(--ink)}.modal-option.error-border{border-color:#FF6B6B}.modal-error{background:#FFF0F0;border:1.5px solid #FF6B6B;border-radius:8px;padding:0.6rem 1rem;font-size:0.85rem;font-weight:600;color:#CC0000}.modal-footer{padding:1rem 1.4rem 1.4rem;flex-shrink:0}.modal-send-btn{width:100%;background:#25D366;color:var(--white);border:2.5px solid #128C4B;border-radius:12px;padding:1rem;font-family:'Baloo 2',cursive;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:4px 4px 0 #128C4B;transition:transform 0.1s,box-shadow 0.1s;display:flex;align-items:center;justify-content:center;gap:0.5rem}.modal-send-btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #128C4B}
+</style>
+<script src="cart.js"></script>
+</body>
+</html>
